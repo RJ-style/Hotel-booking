@@ -1,0 +1,178 @@
+body > div:nth-of-type(2) > div:first-of-type {
+  /* background-color: red; */
+  margin: 3rem 0 0.5rem 0;
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+  text-indent: 0.5rem;
+  padding: 0 1rem 0 0;
+}
+body > div:nth-of-type(2) > div:first-of-type > a {
+  text-decoration: none;
+  font-size: small;
+}
+body > div:nth-of-type(2) > div:first-of-type > a:first-of-type {
+  color: rgb(233, 61, 90);
+}
+body > div:nth-of-type(2) > div:last-of-type {
+  background: linear-gradient(to bottom, #f8fafae7, rgba(4, 67, 87, 0.952));
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+body > div:nth-of-type(2) > div:last-of-type > div {
+  text-align: end;
+  display: flex;
+  padding: 1rem 15px;
+  justify-content: space-between;
+}
+body > div:nth-of-type(2) > div:last-of-type > div > div:first-of-type {
+  /* background-color: yellow; */
+  display: flex;
+  transform: translate(10%, -10%);
+  flex-direction: column;
+}
+body > div:nth-of-type(2) > div:last-of-type > div div:first-of-type > p,
+body > div:nth-of-type(2) > div:last-of-type > div > div:first-of-type a {
+  color: black;
+  margin: 5px 0;
+  background-color: beige;
+  border-radius: 5px;
+  padding: 4px;
+}
+body > div:nth-of-type(2) > div:last-of-type > div > div:first-of-type::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 10rem;
+  width: 3px;
+  background-color: black;
+  border-radius: 9px;
+  left: 170%;
+  transform: translateY(-20%);
+}
+body > div:nth-of-type(2) > div:last-of-type > img {
+  background: green;
+  width: calc(100% - 0%);
+  height: 20rem;
+}
+
+body > div:nth-of-type(2) > div:last-of-type > b {
+  /* background-color: red; */
+  top: 0%;
+  transform: translate(0, -100%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px 0 0;
+}
+
+body > div:nth-of-type(2) > div:last-of-type > b > p {
+  background: rgba(0, 0, 0, 0.795);
+  display: flex;
+  padding: 1rem;
+
+  width: calc(100% - 60%);
+  border-radius: 0 20px 0 0;
+}
+body > div:nth-of-type(2) > div:last-of-type > p > span {
+  text-indent: 15px;
+}
+
+body
+  > div:nth-of-type(2)
+  > div:last-of-type
+  > div:last-of-type
+  > div:last-of-type
+  > div:first-of-type {
+  margin: 5px 0;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: pink;
+  display: flex;
+  justify-content: space-evenly;
+}
+body
+  > div:nth-of-type(2)
+  > div:last-of-type
+  > div:last-of-type
+  > div:last-of-type
+  > div:first-of-type
+  img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 8px;
+  background-color: red;
+}
+
+body
+  > div:nth-of-type(2)
+  > div:last-of-type
+  > div
+  > div:last-of-type
+  > h3:nth-of-type(3)
+  + div
+  > div {
+  background: linear-gradient(to left, rgb(10, 32, 231), rgb(221, 19, 221));
+  width: 8rem;
+  display: flex;
+  justify-content: end;
+  border-radius: 30px;
+  padding: 0 5px;
+}
+
+body
+  > div:nth-of-type(2)
+  > div:last-of-type
+  > div
+  > div:last-of-type
+  > h3:nth-of-type(3)
+  + div
+  > div
+  > p {
+  background: none;
+  color: white;
+}
+
+#bookNow {
+  background-color: rgb(18, 18, 92);
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0.6rem 38px 0 10px;
+  margin: 0.6rem 0 0 0;
+}
+#bookNow > span:first-of-type {
+  color: rgb(43, 196, 43);
+  font-weight: 400;
+}
+#bookNow > span:last-of-type {
+  color: rgb(224, 53, 53);
+  font-weight: 400;
+}
+#bookNow::after {
+  content: ">";
+  font-size: large;
+  position: absolute;
+  display: block;
+  background-color: rgb(0, 2, 24);
+  width: 3rem;
+  height: 2.5rem;
+  border-radius: 10pc;
+  text-align: center;
+  padding: 0.5rem 0 0 0;
+  top: 0%;
+  /* left: 0%; */
+  transform: translate(250%, 10%);
+}
+
+
+#reviews{
+  background-color: red;
+}
+#reviews>p{
+  
+}
