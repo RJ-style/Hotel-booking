@@ -32,7 +32,7 @@ body > div:nth-of-type(2) > div:last-of-type > div > div:first-of-type {
   transform: translate(10%, -10%);
   flex-direction: column;
 }
-body > div:nth-of-type(2) > div:last-of-type > div div:first-of-type > p,
+body > div:nth-of-type(2) > div:last-of-type > div > div:first-of-type > p,
 body > div:nth-of-type(2) > div:last-of-type > div > div:first-of-type a {
   color: black;
   margin: 5px 0;
@@ -112,7 +112,6 @@ body
   > h3:nth-of-type(3)
   + div
   > div {
-  background: linear-gradient(to left, rgb(10, 32, 231), rgb(221, 19, 221));
   width: 8rem;
   display: flex;
   justify-content: end;
@@ -168,11 +167,143 @@ body
   /* left: 0%; */
   transform: translate(250%, 10%);
 }
-
-
-#reviews{
-  background-color: red;
+#reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: auto;
 }
-#reviews>p{
-  
+#reviews div {
+  /* background: linear-gradient(to left, rgb(10, 32, 231), rgb(221, 19, 221)); */
+  width: auto;
+}
+#reviews > div:first-of-type {
+  background-color: rgb(156, 26, 33);
+  /* margin: 0*/
+  width: fit-content;
+  justify-content: space-between;
+  justify-items: start;
+}
+#reviews > div:first-of-type > p:first-of-type {
+  background-color: black;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 10pc;
+  margin: 3px;
+}
+#reviews > div:first-of-type > p:last-of-type {
+  margin: 1rem 0 0 0;
+}
+#reviews >div > p:first-of-type > span {
+  font-size: 30px;
+  /* background-color: black; */
+}
+
+#reviews>div:last-of-type{
+  margin: 1rem 0 0 0;
+  /* background-color: red; */
+  justify-content: space-evenly;
+}
+#reviews>div:last-of-type div p{
+  text-align: center;
+  /* color: green; */
+}
+
+progress[value]::-webkit-progress-bar,
+progress[value] {
+  background-color: #eee;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #a927f5;
+  transition: all 0.2s ease-out;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #a927f5;
+  transition: all 0.2s ease-out;
+}
+.progress-rev {
+  background-color: darkblue;
+  border-radius: 5px;
+  width: 7rem;
+  height: 1.5rem;
+  appearance: none;
+  border: solid darkmagenta;
+  border-width: 2px;
+}
+
+#reviews~div{
+  /* background-color: red; */
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#reviews~div>div:first-of-type{
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+}
+#reviews~div>div:first-of-type>div{
+  padding: 0 1rem;
+  width: calc(100% - 55%);
+  justify-content: space-evenly;
+  /* margin: 1rem 0 0 0; */
+  /* background-color:blue; */
+  display: flex;
+  flex-direction: column;
+}
+.range-inp{
+display: flex;
+justify-content: space-between;
+padding: 0 2rem;
+border-radius: 5px;
+text-align: center;
+background-color: #ddb442;
+color: black;
+}
+.range-inp p{
+  color: rgb(104, 1, 10);
+}
+.range-inp input{
+  margin: 0.5rem 0 0 0;
+  -webkit-appearance: none;
+  background-color: rgba(15, 13, 13, 0.774);
+  border-radius: 5rem;
+  appearance: none;
+  height: 1em;
+  /* color: red; */
+}
+.range-inp input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 10pc;
+  background-color: rgb(227, 236, 227);
+}
+.range-inp input::-moz-range-thumb{
+  background-color: green;
+  width:25px;
+  height: 25px;
+}
+#add-review{
+  text-align: center;
+  width:max-content;
+  height: 2rem;
+  margin: auto;
+  background-color: rgba(21, 194, 59, 0.651);
+  border-radius: 1rem;
+}
+#review-write{
+  color: black;
+  width: calc(100% - 30%);
+  height: 8rem;
+  overflow-wrap: break-word;
+  resize: none;
+  border-radius: 3px;
 }

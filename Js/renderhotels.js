@@ -1,6 +1,9 @@
-const roomName = document.getElementById("RoomName");
+const roomName = document.getElementById("roomName");
+const amount = document.getElementById("amnt");
+let arr = [];
 
 const roomsInHomePg = [];
+
 const roomsList = document.getElementById("BotCont").querySelector("ul");
 class rooms {
   constructor(img, Name, rating, Availablity, Desc, rent) {
@@ -30,13 +33,14 @@ class rooms {
    `;
     roomsInHomePg.push(roomLi);
     roomsList.append(roomLi);
+
     roomLi.addEventListener("click", () => {
-        alert(this.Name);
-        roomName.innerText = this.Name;
+      console.log(this.Name);
     });
+    arr.push('this.Name')
   }
 }
+console.log(arr);
+new rooms("", "room no1", "5#", "Available", "good", "1500").render();
 
-new rooms("", "double", "5#", "Available", "good", "₹1500").render();
-
-new rooms("", "dou", "5#", "Available", "good", "₹1500").render();
+// new rooms("", "dou", "5#", "Available", "good", "₹1500").render();
